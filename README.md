@@ -1,2 +1,2 @@
-# k8s-learn-you-some
+# Kubernetes
 Learn You Some Kubernetes
