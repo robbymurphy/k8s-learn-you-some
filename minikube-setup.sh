@@ -8,4 +8,5 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machine-
 # install minikube
 brew cask install minikube
 
+# fire up minikube
 minikube start --vm-driver=hyperkit

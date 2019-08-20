@@ -26,15 +26,7 @@ You describe the _Resources_ and _Desired State_ of your application and Kuberne
 ![width:400px](img/control_loop.png)
 
 ---
-# Heroku
 
-Heroku solved this problem in a very explicit manner.
-
-![width:550px](img/heroku.png)
-
-Bill's LYS: https://docs.google.com/presentation/d/12HWJP1UijZ5L5CqC4xav0C0avEd9jS37lmV8Gs2hbuI/
-
----
 # Basic Building Blocks of K8s
 
 `Pod` - smallest unit, represents a running container process
@@ -49,7 +41,9 @@ Bill's LYS: https://docs.google.com/presentation/d/12HWJP1UijZ5L5CqC4xav0C0avEd9
 
 Local Kubernetes playground
 
-Creates cluster
+Creates/configures cluster - Node, Kubernetes binaries, Master process
+
+Provides some utility functions (ssh, etc.)
 
 `minikube-setup.sh`
 
@@ -112,7 +106,6 @@ metadata:
 spec:
   selector:
     app: nginx # group together pods that match this selector
-  type: NodePort # expose the service on the node's ip address
   ports:
     - protocol: TCP
       port: 80
